@@ -1,0 +1,43 @@
+@use "btnbg";
+
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
+.btn {
+ color:white;
+ text-decoration:none;
+ padding:5px 10px;
+ border-radius:3px;
+ font-family: 'Poiret One', cursive;
+ font-size:2em;
+ cursor: pointer;
+ user-select: none
+}
+
+.btn-green {
+   @include btnbg.button-bg(#2ecc71);
+}
+
+.btn-blue {
+   @include btnbg.button-bg(#3498db);
+}
+
+.btn-yellow{
+   @include btnbg.button-bg(#f1c40f);
+}
+
+.btn-red {
+   @include btnbg.button-bg(#e74c3c);
+}
+
+/*Other Stylez*/
+.wrap {
+  margin:0 auto;
+  width:800px;
+  text-align:center;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-size:4em;
+}
